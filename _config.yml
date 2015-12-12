@@ -1,0 +1,7 @@
+# GitHub Pages defaults
+safe: true
+
+# Files not to copy to destination
+exclude: ["Gemfile", "Gemfile.lock", "favicon.gif", "tekst website.docx"]
+
+timezone: "Europe/Copenhagen"

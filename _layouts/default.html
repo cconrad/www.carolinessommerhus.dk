@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<meta name="keywords" content="sommerhus, leje, sjællands, odde">
+<meta name="description" content="Lej verdens bedste sommerhus">
+<title>Sommerhus til leje</title>
+<link rel="stylesheet" type="text/css" href="grids.css" >
+
+<script type="text/javascript" >
+	var i = -1; // -1 since we use next() to initialize the image
+	var images = new Array();
+	images[0] = 'img/20002_2.jpg';
+	images[1] = 'img/560_01_large.jpg';
+	images[2] = 'img/570_02_large.jpg';
+	images[3] = 'img/570_03_large.jpg';
+	images[4] = 'img/551_10_large (2).jpg';
+	images[5] = 'img/510_06_large.jpg';
+	images[6] = 'img/510_07_large (2).jpg';
+	images[7] = 'img/515_05_large (2).jpg';
+	images[8] = 'img/518_09_large.jpg';
+	images[9] = 'img/521_08_large (2).jpg';
+	images[10] ='img/521_11_large.jpg';
+	images[11] ='img/521_12_large.jpg';
+	images[12] ='img/530_04_large (2).jpg';
+	images[13] ='img/20016_2.jpg';
+	images[14] ='img/20024_1.jpg';
+	images[15] ='img/20028_2.jpg';
+	images[16] ='img/plan.gif';
+	function getimagetag()
+	{
+		var temp;
+		temp = document.getElementById('slideshow');
+		return temp;
+	}
+
+	function next()
+	{
+		i++;
+		i=i%images.length;
+
+		var img =getimagetag();
+		img.src=images[i];
+	}
+
+	function prev()
+	{
+		i--;
+		i=i%images.length;
+
+		var img =getimagetag();
+		img.src=images[i];
+	}
+
+	window.onload=next;
+
+</script>
+</head>
+<body>
+
+<div id="doc3" class="yui-t7">
+	{{ content }}
+</div>
+</body>
+</html>
