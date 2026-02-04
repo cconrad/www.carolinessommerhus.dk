@@ -2,6 +2,13 @@
 safe: true
 
 # Files not to copy to destination
-exclude: ["Gemfile", "Gemfile.lock", "favicon.gif", "tekst website.docx"]
+exclude:
+  - vendor/
+  - .devcontainer/
+  - Gemfile
+  - Gemfile.lock
+  - favicon.gif
+  - "tekst website.docx"
+  - .bundle/
 
 timezone: "Europe/Copenhagen"
